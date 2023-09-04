@@ -84,7 +84,7 @@ img.mobile-tribal, img.image_16th{
         }
         
         h2, h3, h4, h5, p{
-            margin-bottom: 0px !important;
+            margin-bottom: 25px !important;
             padding: 0px;
         }
         .foot {
@@ -153,7 +153,7 @@ img.mobile-tribal, img.image_16th{
   <div class="container">
     <a class="navbar-brand" href="#">
         <img src="<?php echo base_url('assets/img/16th.png'); ?>" style="max-height: 85px;max-width: none;" class="image_16th">
-        <img src="<?php echo base_url('assets/img/Website Header.jpg'); ?>" style="max-height: 85px;max-width: none;" class="image_header">  
+        <img src="<?php echo base_url('assets/img/WH.jpg'); ?>" style="max-height: 85px;max-width: none;" class="image_header">  
     </a>
   </div>
 </nav>
@@ -162,11 +162,9 @@ img.mobile-tribal, img.image_16th{
     <div class="container">
         <div class="row">
             <div class="col-sm-12">  
-                <h3 class="profile"> <b>PROFILE</b> - PARTICIPANT</h3>
-                <br>
             </div>
             
-            <div class="col-sm-12" style="box-shadow: 0 3px 6px #8d4b0b;">
+            <div class="col-sm-15" style="box-shadow: 0 2px 12px #8d4b0b;">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="row">  
@@ -182,9 +180,7 @@ img.mobile-tribal, img.image_16th{
                             </div>
                             <div class="col-sm-8">
                                 <div class="col-sm-12">
-                                    <div class="alert alert-info">
-                                      <strong>MAUPAY NA ADLAW!</strong> Thank you for your interest to participate in the 16th PNHRS Week Celebration. Your registration is now waiting for approval. Once approved, a confirmation will be sent to your email, and your unique QR code will be displayed here.
-                                    </div>
+                                    
                                     <br>
                                 </div>
                                 <div class="col-sm-12">
@@ -247,13 +243,12 @@ img.mobile-tribal, img.image_16th{
                                           <!-- Modal Header -->
                                           <div class="modal-header">
 
-                                            <h4 class="modal-title">Update Profile</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                           </div>
 
                                           <!-- Modal body -->
                                           <div class="modal-body">
-                                            <img src="<?php echo base_url('assets/img/Website Header.jpg'); ?>" style="max-height: 62px;max-width: none;" class="image_modal"> 
+                                            <img src="<?php echo base_url('assets/img/WH.jpg'); ?>" style="max-height: 62px;max-width: none;" class="image_modal"> 
                                             <label class="please">Please fill in the necessary information </label>
                                             <form id="UpdateInfo">
                                             <div class="col-sm-12">
@@ -329,16 +324,20 @@ img.mobile-tribal, img.image_16th{
                                                 <div class="row">
                                                     <div class="form-group col-sm-6">
                                                         <select required class="btn input_textarea" name="usr_sector" id="usr_sector" placeholder="Sector"  >
-                                                            <option <?php if($data->usr_sector == 'Academe (Teacher, Professor, Faculty, University Researcher)'){ ?> selected <?php } ?>>Academe (Teacher, Professor, Faculty, University Researcher)</option>
+                                                            <option <?php if($data->usr_sector == 'Academe'){ ?> selected <?php } ?>>Academe</option>
                                                             <option <?php if($data->usr_sector == 'Association'){ ?> selected <?php } ?>>Association</option>
                                                             <option <?php if($data->usr_sector == 'Cooperative'){ ?> selected <?php } ?>>Cooperative</option>
-                                                            <option <?php if($data->usr_sector == 'Individual / NEET(Not in Education, Employment, or Training)'){ ?> selected <?php } ?>>Individual / NEET(Not in Education, Employment, or Training)</option>
-                                                            <option <?php if($data->usr_sector == 'Government'){ ?> selected <?php } ?>>Government</option>
-                                                            <option <?php if($data->usr_sector == 'LGU'){ ?> selected <?php } ?>>LGU</option>
-                                                            <option <?php if($data->usr_sector == 'NGO'){ ?> selected <?php } ?>>NGO</option>
-                                                            <option <?php if($data->usr_sector == 'OFW'){ ?> selected <?php } ?>>OFW</option>
-                                                            <option <?php if($data->usr_sector == 'Private(Sole Proprietor, Entrepreneur, MSME)'){ ?> selected <?php } ?>>Private(Sole Proprietor, Entrepreneur, MSME)</option>
+                                                            <option <?php if($data->usr_sector == 'National Government Agencies'){ ?> selected <?php } ?>>National Government Agencies</option>
+                                                            <option <?php if($data->usr_sector == 'Local Government Unit'){ ?> selected <?php } ?>>Local Government Unit</option>
+                                                            <option <?php if($data->usr_sector == 'Non-Governmental Organization'){ ?> selected <?php } ?>>Non-Governmental Organization</option>
+                                                            <option <?php if($data->usr_sector == 'Overseas Filipino Worker'){ ?> selected <?php } ?>>Overseas Filipino Worker</option>
+                                                            <option <?php if($data->usr_sector == 'Private Sector'){ ?> selected <?php } ?>>Private Sector</option>
                                                             <option <?php if($data->usr_sector == 'Student'){ ?> selected <?php } ?>>Student</option>
+                                                            <option <?php if($data->usr_sector == 'Senior Citizen'){ ?> selected <?php } ?>>Senior Citizen</option>
+                                                            <option <?php if($data->usr_sector == 'Persons with Disabilities'){ ?> selected <?php } ?>>Persons with Disabilities</option>
+                                                            <option <?php if($data->usr_sector == 'Hospital'){ ?> selected <?php } ?>>Hospital</option>
+                                                            <option <?php if($data->usr_sector == 'DOST Agencies'){ ?> selected <?php } ?>>DOST Agencies</option>
+                                                            <option <?php if($data->usr_sector == 'Others'){ ?> selected <?php } ?>>Others</option>
                                                             <!-- <option value="others">Others, please specify:</option> -->
                                                         </select>
                                                     </div>
@@ -389,9 +388,7 @@ img.mobile-tribal, img.image_16th{
                                           <!-- Modal footer -->
                                           <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                            <?php if($data->approval_status != 1){ ?> 
                                                 <button type="submit" class="btn btn-primary" >Save Changes</button> 
-                                            <?php } ?> 
                                           </div>
                                           </form>
                                         </div>
@@ -439,27 +436,6 @@ img.mobile-tribal, img.image_16th{
         </div>
     </div>
 </div>
-
-
-
-<footer class="container-fluid p-4 rounded bg-primary">
-      <div class="d-lg-flex justify-content-between foot">
-        <div>
-          <p>16th Philippine National Health Research System Week</p>
-          <p>Eastern Visayas</p>
-        </div>
-        <div class="copyright">
-          <p>developed and maintained by <a href="#" target="_blank"><b style="color:#ed9822;">EVHRDC 2023</b></a></p>
-        </div>
-        <div>
-          <ul class="d-flex gap-3 list-unstyled">
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
 
 <script>
 $(document).ready(function() {
@@ -520,7 +496,7 @@ function getProfile(){
             var json = $.parseJSON(data)
 
             if(json.user_data.usr_suffix!='') { suffix = ', '+ json.user_data.usr_suffix; } else { suffix = ''; }
-            name = json.user_data.usr_fname+' '+json.user_data.usr_mname+' '+json.user_data.usr_lname+' '+suffix
+            name = json.user_data.usr_fname+' '+json.user_data.usr_mname+'. '+json.user_data.usr_lname+''+suffix
             $('#usr_name_view').html('<b>'+name+'</b>')
             $('#usr_institution_view').html('<b>'+json.user_data.usr_institution+'<b>')
             $('#usr_occupation_view').html(json.user_data.usr_occupation)

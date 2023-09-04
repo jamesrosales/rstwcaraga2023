@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>QR Attendance</title>
+  <title>Attendance System</title>
   <script src="<?php echo base_url() ?>assets/dist/js/jsQR/jsQR.js"></script>
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/bootstrap/dist/css/bootstrap.css">
@@ -63,8 +63,8 @@
     <div class="row">
         <div class="col-md-12" style="padding-bottom: 2%; ">
             <br><img style="height: 70px;" src="<?=base_url('assets/dist/img/dost8.png')?>" alt="" />
-            <h1 class="hrmisLogo" style="color: #fff!important;">DOST VIII</h1>
-            <div class="small" style="color: #fff!important;">Contactless Attendance System</div>
+            <h1 class="hrmisLogo" style="color: #fff!important;">DOST Caraga</h1>
+            <div class="small" style="color: #fff!important;">Attendance System</div>
         </div>
     </div>
 
@@ -91,7 +91,7 @@
     </div>
     <div class="col-md-12">
         <div class="footer">
-            <div class="copyright"> 2020 © DOST VIII. </div>
+            <div class="copyright"> 2023 © DOST Caraga </div>
         </div>
     </div>
 </div>

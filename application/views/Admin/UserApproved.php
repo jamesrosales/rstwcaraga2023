@@ -8,8 +8,8 @@
         <div class="col-lg">
         <div class="card card-shadow">
             <div class="card-header">
-                <h5 class="card-title pendingTxt">
-                    Approved Participants
+            <h5 class="card-title approvedTxt" style="color:#003366";>
+                    Approved Registrants
                 </h5>
             </div>
             <div class="card-body table-responsive">

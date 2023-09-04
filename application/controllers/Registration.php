@@ -22,11 +22,11 @@ class Registration extends CI_Controller {
             'b' => 'asc'
         ];
         $events = $this->Functions->select_table_OrderBy($order_by,"tbl_events");
-        $order_byR = [
+        $order_by = [
             'a' => 'role_id',
             'b' => 'asc'
         ];
-        $roles = $this->Functions->select_table_OrderBy($order_byR,"tbl_roles");
+        $roles = $this->Functions->select_table_OrderBy($order_by,"tbl_roles");
 
         $data = [
             'events' => $events,
@@ -46,8 +46,14 @@ class Registration extends CI_Controller {
         ];
         $events = $this->Functions->select_table_OrderBy($order_by,"tbl_events");
 
+        $order_byR = [
+            'a' => 'role_id',
+            'b' => 'asc'
+        ];
+        $roles = $this->Functions->select_table_OrderBy($order_byR,"tbl_roles");
         $data = [
-            'events' => $events
+            'events' => $events,
+            'roles' => $roles
         ];
 
         $this->load->view('registration/index',$data);

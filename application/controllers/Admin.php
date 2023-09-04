@@ -282,7 +282,6 @@ class Admin extends CI_Controller {
 		    $body = '';
 
 		    $body = '<img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t39.30808-6/372687441_321131676950638_1880914990816172129_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=49d041&_nc_ohc=20mp_kV0IuYAX9mHUAi&_nc_ht=scontent.fmnl10-1.fna&_nc_e2o=s&oh=00_AfASMJ9b47vEqj3SIQTwJYnpfrGYFb7wk67Xh18lurQFMw&oe=64F6E27A" width="1100px" />';
-		    // $body = '<img src="https://pnhrsregistration2023.dost8.ph/assets/img/webhead.png"  width="1100px"/>';
 
 		    $body .='
 		    	<p>Dear '.$salutation.'<b> '.$data->usr_fname.' '.$data->usr_lname.',</b></p>

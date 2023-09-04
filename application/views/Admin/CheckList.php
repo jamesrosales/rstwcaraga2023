@@ -35,7 +35,7 @@
                             <tr>
                                 <td><?=$num?></td>
                                 <?php if($var['usr_suffix']!='') { $suffix = $var['usr_suffix']; } else { $suffix = ''; } ?>
-                                <td><?=$var['usr_lname']?> <?=$suffix; ?> <?=$var['usr_fname']; ?> <?=$var['usr_mname']; ?></td>
+                                <td><?=$var['usr_fname']; ?> <?=$var['usr_mname']; ?>. <?=$var['usr_lname']?> <?=$suffix; ?></td>
                                 <td><?=$var['usr_gender']?></td>
                                 <td><?=$var['usr_cluster']?></td>
                                 <td><?=$var['role_name']?></td>    

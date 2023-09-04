@@ -636,7 +636,7 @@ class Dashboard extends CI_Controller {
 		// $sheet->setCellValue('A1', 'DEPARTMENT OF SCIENCE AND TECHNOLOGY');
 		// $sheet->setCellValue('A2', 'Regional Office No. 8');
 		// $sheet->setCellValue('A4', 'ATTENDANCE SHEET');
-		$regularFont = '&"-,Regular"Regional Office No. 8';
+		$regularFont = '&"-,Regular"Caraga Regional Office';
 		// $sheet->getHeaderFooter()->setOddHeader("A4:O10");
 		$sheet->getHeaderFooter()->setOddHeader("&C&G &BDEPARTMENT OF SCIENCE AND TECHNOLOGY\n ".$regularFont."\n\n&bATTENDANCE SHEET");
 

@@ -7,7 +7,7 @@
   body{
 /*      background-color: #2a4b75;*/
       font-family: "Open Sans", sans-serif;
-      background: url('../../assets/img/Session-Backdrop.png');
+      background: url('../../assets/img/SB.png');
   background-position: center center;
 
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     }
 
     .heading_color{
-      color: #e8652b;
+      color: #144a88;
     }
     .color_white{
       color: white;
@@ -50,8 +50,6 @@
     }
 
     .copyright{text-align:center;margin:0 auto 30px 0;padding:10px;color:#144a88;font-size:13px}
-
-
 
     @media (max-width: 2000px) {
       .container {
@@ -102,38 +100,26 @@
         color: #fff
     }
     thead{
-        background-color: #e8652b;
+        background-color: #144a88;
     }
   </style>
 </head>
 <body>
-<div class="menu-toggler sidebar-toggler"></div>
-<div class="logo"></div>
-  
 <div class="container">
-    <!-- <div class="row">
-        <div class="col-md-12" style="padding-bottom: 2%; ">
-            <br><img style="height: 70px;" src="<?=base_url('assets/dist/img/dost8.png')?>" alt="" />
-            <h1 class="hrmisLogo" style="color: #fff!important;">DOST VIII</h1>
-            <div class="small" style="color: #fff!important;">Contactless Attendance System</div>
-        </div>
-    </div> -->
 <?php $this->load->view('dashboard/template'); ?>
-<center style="color:#144a88;"><h4><?=$tbl_events->event_name?></h4></center>
+<center style="color:#144a88;"><h4><b><?=$tbl_events->event_name?></b></h4>
+<div class="digital-clock heading_color"></div></center>
 
 <div class="row" >
     <div class="col-md-6">
-       <center><div class="heading_color"><h3>Camera</h3></div></center>
           <div id="loadingMessage" class="color_white">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
-          <br>
-          <canvas id="canvas" hidden style="width: 100%;height: 600px;" class="shadow-lg  rounded"></canvas>
+          <canvas id="canvas" hidden style="width: 100%; height: 550px; border-radius: 10%; box-shadow: 0 0 10px rgba(0, 0, 128, 0.5);"></canvas>
           <div id="output" hidden>
-              <div id="outputMessage" style="color:white;">No QR code detected.</div>
+              <div id="outputMessage" style="color:white;">No QR Code</div>
               <div hidden style="color:white;"><b>Data:</b> <span id="outputData"></span></div>
           </div>
     </div>
     <div class="col-md-6" >
-        <center><div class="digital-clock heading_color"></div></center>
         <div style="background-color: white;padding: 10px" class="shadow-lg p-3 mb-5 bg-white rounded">
             <form class="form-inline" id="SearchEmployee">
                 <div class="form-group mb-2">
@@ -155,7 +141,7 @@
                     <a class="btn btn-block btn-sm btn-primary" style="height: 30px;color: white;" onclick="EmployeeRecordsAttendance()">Refresh</a>
                 </div>&nbsp;
                 <div class="mb-2">
-                    <a class="btn btn-block btn-sm btn-primary" style="height: 30px;color: white;" onclick="GenerateReport()">GenerateReport</a>
+                    <a class="btn btn-block btn-sm btn-primary" style="height: 30px;color: white;" onclick="GenerateReport()">Generate Report</a>
                 </div>&nbsp;
                  <div class="mb-2">
                     <a class="btn btn-block btn-sm btn-primary" style="height: 30px;color: white;" onclick="AddInModal()">Add</a>
@@ -169,7 +155,7 @@
                 </div> -->
             </form>
 
-            <div id="tbl_"  style="">
+            <div id="tbl_"  style="color: #007fff";>
             <table class="table table-striped  table-hover" >
                 <thead >
                     <tr class="tr">
@@ -182,11 +168,6 @@
                 <tbody id="table_body"></tbody>
             </table>
             </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="footer">
-            <div class="copyright"> 2020 © DOST VIII. </div>
         </div>
     </div>
 </div>

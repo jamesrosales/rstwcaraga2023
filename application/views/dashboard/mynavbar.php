@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-  <title>QR Attendance</title>
+  <title>Attendance System</title>
   <script src="<?php echo base_url() ?>assets/dist/js/jsQR/jsQR.js"></script>
 
   <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/bootstrap/dist/css/bootstrap.css"> -->

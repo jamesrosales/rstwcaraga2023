@@ -1,7 +1,7 @@
 <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home</title>
+      <title>RSTW 2023</title>
           
       <link rel="icon" type="image/ico" href="<?php echo base_url('assets/img/logo.png');?>" />
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/bootstrap/dist/css/bootstrap.css">
@@ -24,7 +24,7 @@
 <style>
   .navbar{
 
-background: linear-gradient(108.5deg, #ff685ad1, #ffb511d1 68%);
+background: linear-gradient(108.5deg, #002e63, #318ce7 68%);
 /*background: linear-gradient(108.5deg, #e74536d1, #ffb511d1 68%);*/
 
   }
@@ -131,7 +131,7 @@ background: linear-gradient(108.5deg, #ff685ad1, #ffb511d1 68%);
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 0.5px solid grey;">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/dashboardpnhrslogo.png')?>" height="60px;"></a>
+    <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/dashboardpnhrslogo1.png')?>" height="60px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -166,12 +166,15 @@ background: linear-gradient(108.5deg, #ff685ad1, #ffb511d1 68%);
           </div>
         </li>
          <li class="nav-item ">
-          <a class="nav-link " href="<?=base_url('Admin/Events')?>">EVENTS</a>
+          <a class="nav-link " href="<?=base_url('Admin/Events')?>">ADD EVENTS</a>
+        </li> 
+        <li class="nav-item ">
+          <a class="nav-link " href="<?=base_url('Dashboard/')?>">ATTENDANCE</a>
         </li> 
             </ul>
         <ul class="navbar-nav " >
             <li class="nav-item ">
-          <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/pnhrslogoright.png')?>" height="60px;" ></a>
+          <a class="navbar-brand" href="#"><img src="<?=base_url('assets/img/pnhrslogoright1.png')?>" height="60px;" ></a>
           </li>
         </ul>
       <!-- <form class="form-inline my-2 my-lg-0">

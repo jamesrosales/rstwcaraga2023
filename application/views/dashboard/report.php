@@ -17,7 +17,7 @@
             $myHeading .= '<th colspan="15" style="text-align:center;"><b>DEPARTMENT OF SCIENCE AND TECHNOLOGY</b></th>';
         $myHeading .= '</tr>';
         $myHeading .= '<tr style="font-size:11px;">';
-            $myHeading .= '<th colspan="15" style="text-align:center;">Regional Office No. 8</th>';
+            $myHeading .= '<th colspan="15" style="text-align:center;">Caraga Regional Office</th>';
         $myHeading .= '</tr>';
         $myHeading .= '<tr style="font-size:11px;">';
             $myHeading .= '<th colspan="15" style="text-align:center;"><br><br><b>ATTENDANCE SHEET</b></th>';

@@ -43,11 +43,11 @@
                     var text_output = "";
               
                     if (json[i].usr_cluster == 'Luzon') {
-                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID Card LUZON.png'); ?>'+'"'+''+'>'
+                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID.png'); ?>'+'"'+''+'>'
                     } else if (json[i].usr_cluster == 'Visayas'){
-                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID Card VISAYAS.png'); ?>'+'"'+''+'>'
+                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID.png'); ?>'+'"'+''+'>'
                     } else {
-                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID Card MINDANAO.png'); ?>'+'"'+''+'>'
+                        img +='<img class="imgID" src="'+'<?php echo base_url('assets/img/ID.png'); ?>'+'"'+''+'>'
                     }
 
                     

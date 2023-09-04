@@ -44,7 +44,7 @@
         <div class="col-lg">
         <div class="card card-shadow">
             <div class="card-header">
-                <h5 class="card-title pendingTxt">
+                <h5 class="card-title pendingTxt" style="color: #354093";>
                     Approved Participants
                 </h5>
             </div>
@@ -268,7 +268,7 @@
                     datasets: [{
                     data: [json.Pending, json.Approved],
                     backgroundColor: [
-                      '#ef961b',
+                      '#e32636',
                       '#354093',
                     ]
                   }]
@@ -324,7 +324,7 @@
                     // label: 'My First Dataset',
                     data: [MaleCount, FemaleCount],
                     backgroundColor: [
-                      '#ef961b',
+                      '#e32636',
                       '#354093',
                     ]
                   }]
@@ -358,7 +358,7 @@
                     // label: 'My First Dataset',
                     data: dataGraph,
                     backgroundColor: [
-                      '#ef961b',
+                      '#e32636',
                       '#354093',
                       'rgb(255, 205, 86)'
                     ]
@@ -392,7 +392,7 @@
                     label: 'Age Bracket',
                     data: [json.Age15TO30, json.Age31TO45, json.Age46TO59, json.Age60Above],
                     backgroundColor: [
-                      '#ef961b',
+                      '#e32636',
                       '#354093',
                       'rgb(255, 205, 86)',
                       'rgb(54, 162, 235)'
@@ -441,7 +441,7 @@
                     data: dataGraph,
                    
                     backgroundColor: [
-                      '#ef961b',
+                      '#e32636',
                       '#354093',
                       'rgb(255, 205, 86)',
                       'rgb(54, 162, 235)',
