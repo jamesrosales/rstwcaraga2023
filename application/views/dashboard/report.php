@@ -1,6 +1,12 @@
 <?php 
     $event_name = $Events->event_name;
     $GLOBALS['event_name'] = $event_name;
+
+    $event_date = $Events->event_date;
+    $GLOBALS['event_date'] = $event_date;
+
+    $event_venue = $Events->event_venue;
+    $GLOBALS['event_venue'] = $event_venue;
     class MYPDF extends TCPDF {
 
     //Page header
@@ -19,8 +25,8 @@
         $myHeading .= '<tr style="font-size:11px;">';
             $myHeading .= '<th colspan="15" style="text-align:center;">Caraga Regional Office</th>';
         $myHeading .= '</tr>';
-        $myHeading .= '<tr style="font-size:11px;">';
-            $myHeading .= '<th colspan="15" style="text-align:center;"><br><br><b>ATTENDANCE SHEET</b></th>';
+        $myHeading .= '<tr style="font-size:14px;">';
+            $myHeading .= '<th colspan="15" style="text-align:center;"><br><br><b>ATTENDANCE SHEET</b><br></th>';
         $myHeading .= '</tr>';
 
         $myHeading .= '<tr style="font-size:11px;">';
@@ -31,13 +37,13 @@
 
          $myHeading .= '<tr style="font-size:11px;">';
             $myHeading .= '<th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue:</th>';
-            $myHeading .= '<th style="border-bottom: 0.1pt thin black;" colspan="12"></th>';
+            $myHeading .= '<th style="border-bottom: 0.1pt thin black;" colspan="12">'.$GLOBALS['event_venue'].'</th>';
             $myHeading .= '<th></th>';
         $myHeading .= '</tr>';
 
          $myHeading .= '<tr style="font-size:11px;">';
             $myHeading .= '<th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:</th>';
-            $myHeading .= '<th style="border-bottom: 0.1pt thin black;" colspan="12"></th>';
+            $myHeading .= '<th style="border-bottom: 0.1pt thin black;" colspan="12">'.$GLOBALS['event_date'].'</th>';
             $myHeading .= '<th></th>';
         $myHeading .= '</tr>';
 
