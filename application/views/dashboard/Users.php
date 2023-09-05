@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Attendance System</title>
+  <link rel="icon" type="image/ico" href="<?php echo base_url('assets/img/logo.png');?>" />
   <script src="<?php echo base_url() ?>assets/dist/js/jsQR/jsQR.js"></script>
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/bootstrap/dist/css/bootstrap.css">
