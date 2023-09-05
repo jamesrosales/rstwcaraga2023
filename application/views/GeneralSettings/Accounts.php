@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSTW 2023</title>
+    <title>Caraga RSTW 2023</title>
     <link rel="icon" type="image/ico" href="<?php echo base_url('assets/Images/logo.png');?>" />
     <link rel="stylesheet" href="<?php echo base_url('assets/style.css'); ?>" >
     <style>
