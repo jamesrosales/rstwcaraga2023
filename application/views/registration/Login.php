@@ -181,7 +181,7 @@
                                 <input type="submit" name="signup" class="btn btn-block btn-orange" value="Submit">
                                 <center>
                                     <!-- <p style="font-size:15px; color: #1b4485;">New Here?</p>  -->No Account Yet?
-                                    <a href="<?php echo base_url(''); ?>" class="btn btn-sm" style="margin-top:0px;color: #fa920f;font-weight: bolder;"> Create an Account</a>
+                                    <a href="<?php echo base_url(''); ?>" class="btn btn-sm" style="margin-top:0px;color: #fa920f;font-weight: bolder;"> Register Here</a>
                                 </center>
                                 
                             </div>

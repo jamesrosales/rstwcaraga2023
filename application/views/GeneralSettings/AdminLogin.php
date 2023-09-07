@@ -169,23 +169,20 @@
                     </div>
                     
                     <div class="col-sm-12">
-                        <div class="row">
+			<div class="row">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-7 button">
                                 <input type="submit" name="signup" class="btn btn-block btn-orange" value="Login">
                                 <center>
-                                	<br>
-                                	<br>
-                                	<br>
-                                  <!-- New Here?
-                                    <a href="<?php echo base_url(''); ?>" class="btn btn-sm" style="margin-top:0px;color: #fa920f;font-weight: bolder;"> Create an Account</a> -->
+                                    or <a href="<?php echo base_url(''); ?>" class="btn btn-sm" style="margin-top:0px;color: #fa920f;font-weight: bolder;"> Register</a>
                                 </center>
-                                
+<br><br>
                             </div>
                             <div class="col-sm-2">
                                 
                             </div>
                         </div>
+
                     </div>
 
                     <div class="col-sm-12 img_bot" style="background-color: #fff; border-bottom-right-radius: 20px;margin-top: -5px; padding-right:0px;">
