@@ -306,7 +306,7 @@ class Admin extends CI_Controller {
 		    // 	$body .='<p>You may access your QR code below or by logging in at <a href="https://pnhrsregistration2023.dost8.ph/Registration/SignIn">https://pnhrsregistration2023.dost8.ph/Registration/SignIn</a>. For confirmed registration last week, please note that this is the same QR code. Kindly print this QR code or store a screenshot on your mobile device. Upon arrival at the event venue, please scan your unique QR code at the kiosk or laptop placed at the entrance of the meeting rooms.</p>';
 		    // }
 
-		    $body .='<p>You may access your QR code below or by logging in at <a href="https://pnhrsregistration2023.dost8.ph/Registration/SignIn">https://pnhrsregistration2023.dost8.ph/Registration/SignIn</a>. <i>For registrations confirmed earlier, please be informed that this is the same QR code.</i></p>';
+		    $body .='<p>You may access your QR code below or by logging in at <a href="https://rstw2023.dostcaraga.ph/Registration/SignIn">https://rstw2023.dostcaraga.ph/Registration/SignIn</a>. <i>For registrations confirmed earlier, please be informed that this is the same QR code.</i></p>';
 
 		    $body .='<p>Kindly print the QR code or store a screenshot on your mobile device. Upon arrival at the event venue, please scan your unique QR code at the kiosk or laptop placed at the entrance of the meeting rooms.</p>';
 
@@ -379,7 +379,7 @@ class Admin extends CI_Controller {
 		    }
 		    $body = '';
 
-		    $body = '<img src="https://pnhrsregistration2023.dost8.ph/assets/img/webheadfinal.png" width="1100px" />';
+		    $body = '<img src="https://rstw2023.dostcaraga.ph/assets/img/webheadfinal.png" width="1100px" />';
 
 		    $body .='
 		    	<p>Dear '.$salutation.'<b> '.$data->usr_fname.' '.$data->usr_lname.',</b></p>
