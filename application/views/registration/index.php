@@ -342,10 +342,6 @@ img.mobile-tribal, img.show_img{
             </div>
             <div class="col-sm-12">
                 <div class="row">
-                  <!--   <div class="col-sm-1">
-                        <label class="form-check-label justify" for="gridCheck" ></label>   
-                    </div> -->
-                    
                     <div class="col-sm-12" style="text-align: justify; font-size: 8px;">
                         <label class="form-check-label text_condition" for="gridCheck" >
                             <input class="form-check-input condition" type="checkbox" required id="gridCheck">By filling-out this form, you agree with the Data Privacy Policy of the Department of Science and Technology Caraga Regional Office and the National Privacy Commission (NPC). Both personal and non-personal information may be collected from you for using this form. Rest assured that these data shall be kept safe and secured, and will not be shared with anyone except to designated personnel who will process the needed information only for facilitating smooth participation and distribution of materials for such event. The collective information derived from this event will be useful for the improvement of implementing similar activities in the future.
@@ -356,16 +352,16 @@ img.mobile-tribal, img.show_img{
             </div>
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-2">
-                        
-                    </div>
+                    <div class="col-sm-2"></div>
                     <div class="col-sm-8">
                         <br>
                         <div class="button-container">
-                        <input type="submit" name="signup" class="btn btn-block btn-orange" value="Register Data">
-                        <input type="submit" name="signup" class="btn btn-block btn-orange" value="User Login" onclick="redirectToSignIn()">
-                        <input type="submit" name="signup" class="btn btn-block btn-orange" value="Admin Login" onclick="redirectToSignInAdmin()">
-                    </div>
+                        	<input type="submit" name="signup" class="btn btn-block btn-orange" value="Confirm Registration">
+			</div>
+			<br>
+			<div class="button-container">
+				<a href="#" onclick="redirectToSignIn()">Login as User </a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onclick="redirectToSignInAdmin()"> Login as Admin</a>
+			</div>
                         <script>
                             function redirectToSignIn() {
                             // Redirect to the desired URL when the button is clicked
