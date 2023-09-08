@@ -58,9 +58,9 @@
                         // res +='<div class="centered_name" style="color: #003366; font-size: 20px;">'+nameFinal+'</div>'
                                             
                         if (nameFinal.length >= 20) {
-                            res +='<div class="less_size center">'+nameFinal+'</div>'
+                            res +='<div class="less_size center" style="color: #003366; font-size: 20px;">'+nameFinal+'</div>'
                         } else {
-                            res +='<div class="centered_name center">'+nameFinal+'</div>'
+                            res +='<div class="centered_name center" style="color: #003366;">'+nameFinal+'</div>'
                         }
                         res +='<div class="centered_inst" style="color: #003366; font-size: 15px;">'+usr_institution+'</div>'
 
@@ -79,9 +79,9 @@
                         res += img
                         res +='<div id="qrcode'+usr_id+'QR'+json[i].usr_id+'" class="QrCodeOutput qr_code"></div><br>'
                         if (nameFinal.length >= 20) {
-                            res +='<div class="less_size center">'+nameFinal+'</div>'
+                            res +='<div class="less_size center" style="color: #003366; font-size: 20px;">'+nameFinal+'</div>'
                         } else {
-                            res +='<div class="centered_name center">'+nameFinal+'</div>'
+                            res +='<div class="centered_name center" style="color: #003366;">'+nameFinal+'</div>'
                         }
                         res +='<div class="centered_inst" style="color: #003366; font-size: 15px;">'+usr_institution+'</div>'
 
