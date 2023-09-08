@@ -6,7 +6,7 @@
 
  <!-- Nix tanan nga css adto ka ma edit ha Views/Templates/admin/idPrintingCSS -->
 <div class="container">
-	<!-- <button class="btn btn-primary btn-xs" onclick="printMe()"> print</button> -->
+
     <div id="IDPrinting">
         
     </div>
@@ -29,15 +29,15 @@
                 for (var i = 0; i < json.length; i++) {
                 	usr_id = json[i].usr_id;
                 	qrcode = json[i].qrcode
-                	usr_institution = json[i].usr_institution.split("").reverse().join("");
+                	usr_institution = json[i].usr_institution.split("").join("");
 
                 	if(json[i].usr_suffix!='') { suffix = ', '+json[i].usr_suffix; } else { suffix = ''; }
                 	if (json[i].usr_mname.length != 0) { usr_mname = json[i].usr_mname.charAt(0)+'.' } else { usr_mname = '' }
                 	name = json[i].usr_fname+' '+usr_mname+' '+json[i].usr_lname+''+suffix
 
-                	nameFinal = name.split("").reverse().join("");
+                	nameFinal = name.split("").join("");
 
-                    usr_role = json[i].role_name.split("").reverse().join("");
+                    usr_role = json[i].role_name.split("").join("");
 
                     var img = "";
                     var text_output = "";
@@ -55,14 +55,14 @@
                 	res +='<div class="col-6">'
                         res += img
                         res +='<div id="qrcode'+usr_id+'" class="QrCodeOutput qr_code"></div><br>'
-                        // res +='<div class="centered_name">'+nameFinal+'</div>'
+                        // res +='<div class="centered_name" style="color: #003366; font-size: 20px;">'+nameFinal+'</div>'
                                             
                         if (nameFinal.length >= 20) {
                             res +='<div class="less_size center">'+nameFinal+'</div>'
                         } else {
                             res +='<div class="centered_name center">'+nameFinal+'</div>'
                         }
-                        res +='<div class="centered_inst">'+usr_institution+'</div>'
+                        res +='<div class="centered_inst" style="color: #003366; font-size: 15px;">'+usr_institution+'</div>'
 
                         if (usr_role.length <= 13) {
                             res +='<div class="centered_role">'+usr_role+'</div><br>'
@@ -83,7 +83,7 @@
                         } else {
                             res +='<div class="centered_name center">'+nameFinal+'</div>'
                         }
-                        res +='<div class="centered_inst">'+usr_institution+'</div>'
+                        res +='<div class="centered_inst" style="color: #003366; font-size: 15px;">'+usr_institution+'</div>'
 
                         if (usr_role.length <= 13) {
                             res +='<div class="centered_role">'+usr_role+'</div><br>'
