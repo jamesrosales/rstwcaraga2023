@@ -68,9 +68,9 @@ class Admin extends CI_Controller {
 		$data = $this->Admin_model->AgeBracket();
 		// echo json_encode($data);
 		$Age15TO30 = 0;
-        $Age31TO45 = 0;
-        $Age46TO59 = 0;
-        $Age60Above = 0;
+	        $Age31TO45 = 0;
+	        $Age46TO59 = 0;
+	        $Age60Above = 0;
 
 		foreach ($data as $var) {
 			$dateOfBirth = $var['birth_date'];
@@ -290,7 +290,7 @@ class Admin extends CI_Controller {
 
 				<p>Thank you for confirming your participation in the <b>2023 Caraga Regional Science, Technology, and Innovation Week (RSTW) Celebration</b> on September 29, 2023 until October 01, 2023, in Surigao City.</p>
 
-				<p>With the theme, <i>"Siyensya, Teknolohiya at Inobasyon: Kabalikat sa Maunlad at Matatag na Kinabukasan."</i> this year\'s celebration aims to highlight the crucial role of health research and innovation in achieving our sustainable development goals in the post-pandemic era.</p>
+				<p>With the theme, <i>"Siyensya, Teknolohiya at Inobasyon: Kabalikat sa Maunlad at Matatag na Kinabukasan"</i>. This year\'s celebration aims to highlight the crucial role of health research and innovation in achieving our sustainable development goals in the post-pandemic era.</p>
 
 
 				<p>Please be reminded that only the participants with <b>approved registration</b> will be allowed.</p>
@@ -314,7 +314,7 @@ class Admin extends CI_Controller {
 
 		    $body .='<p>Attached herewith is the provisional program, for your reference.</p>';
 		    $body .='<p>Should you have any questions or concerns, please do not hesitate to contact us at</p>';
-		    $body .='<p><b>supprt.rstwcaraga@gmail.com</b></p>';
+		    $body .='<p><b>rstw@caraga.dost.gov.ph</b></p>';
 		    $body .='<p>Thank you, and we look forward to seeing you soon!</p>';
 		    $body .='<p>Ibani kami sa Surigao! Tsana!<br>';
 
@@ -369,7 +369,7 @@ class Admin extends CI_Controller {
 
 		    //Content
 		    $mail->isHTML(true);                                  //Set email format to HTML
-		    $mail->Subject = '16th PNHRS Week Event Reminder';                        //$subject
+		    $mail->Subject = '2023 Caraga Regional Science, Technology, and Innovation Week';                        //$subject
 
 		    $salutation = '';
 		    if ($data->usr_gender == 'Male') {
@@ -386,21 +386,20 @@ class Admin extends CI_Controller {
 
 				<p>Maupay na Adlaw!</p>
 
-				<p>We are looking forward to your enthusiastic participation in the 16th Philippine National Health Research System (PNHRS) 
-				Week Celebration which will be held on August 8-11, 2023 at the Summit Hotel, Tacloban City.</p>
+				<p>We are looking forward to your enthusiastic participation in the 2023 Caraga Regional Science, Technology, and Innovation Week (RSTW) 
+				Celebration which will be held on September 29 - October 1, 2023 at the Surigao Provincial Gymnasium, Surigao City.</p>
 
-				<p>With the theme, <i>“Sustainable Development: Resilience through Health Research,”</i> this year’s celebration aims to highlight the crucial role of health research and innovation in achieving our sustainable development goals in the post-pandemic era.</p>
-
+				<p>With the theme, <i>"Siyensya, Teknolohiya at Inobasyon: Kabalikat sa Maunlad at Matatag na Kinabukasan"</i>. This year\'s celebration aims to highlight the crucial role of health research and innovation in achieving our sustainable development goals in the post-pandemic era.</p>
 
 				<p>Please see attached <b>provisional program</b> and <b>event guide</b> for your reference.</p>
 
 				<p>Should you have any questions or concerns, please do not hesitate to contact us at<br>
-					<b>supprt.rstwcaraga@gmail.com</b>
+					<b>rstw@caraga.dost.gov.ph</b>
 				</p>
 
 				<p>Thank you, and we look forward to seeing you soon!</p>
 				<p>Regards,<br>
-				16th PNHRS Registration Committee</p>
+				2023 RSTW in Caraga Registration Committee</p>
 		    ';
 
 		    $mail->Body    = $body; //$body
