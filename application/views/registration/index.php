@@ -163,7 +163,7 @@ img.mobile-tribal, img.show_img{
         }
          .select2-container .select2-selection--multiple{
             border: 0px !important;
-            border-bottom: 1px solid #e48600 !important;
+            border-bottom: 2px solid #e48600 !important;
         }
         .button-container {
             display: flex;
@@ -320,9 +320,10 @@ img.mobile-tribal, img.show_img{
                     <input type="text" name="usr_sector_other" id="" class="input_textarea form-control" >
                 </div> -->
             </div>
+
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <select required class="btn input_textarea" name="usr_cluster" id="usr_sector" placeholder="Sector">
                             <option selected disabled>Regional Cluster</option>
                             <option value="Luzon">Luzon</option>
@@ -330,8 +331,13 @@ img.mobile-tribal, img.show_img{
                             <option value="Mindanao">Mindanao</option>
                         </select>
                     </div>
-                    <div class="col-sm-6">
-                       
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
                         <select required class="btn input_textarea select2" multiple="multiple" data-placeholder="Select Events" name="event_name[]" >
                             <?php foreach ($events as $var) { ?>     
                             <option value="<?=$var['event_id']?>"><?=$var['event_name']?></option>                  
@@ -340,6 +346,7 @@ img.mobile-tribal, img.show_img{
                     </div>
                 </div>
             </div>
+
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-12" style="text-align: justify; font-size: 8px;">
@@ -385,8 +392,6 @@ img.mobile-tribal, img.show_img{
                 </div>
             </div> 
             <div class="col-sm-1" style="background-color: #fff; border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
-                
-                
 
                 <img src="<?php echo base_url('assets/img/1Tribal.png'); ?>" style="height: 650px;margin-left: 19px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;" class="mobile-down">
             </div>
